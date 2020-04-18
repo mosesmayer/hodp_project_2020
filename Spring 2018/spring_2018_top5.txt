@@ -1,0 +1,13 @@
+Crossreg top 5:
+0: Romance Languages & Lit           77
+1: Economics                         62
+2: East Asian Langs & Civ            49
+3: English                           46
+4: Medical Sciences                  46
+
+Grad top 5:
+1: Medical Sciences                  1106
+2: Economics                         433
+3: Computer Science                  299
+4: Government                        279
+5: Physics                           269

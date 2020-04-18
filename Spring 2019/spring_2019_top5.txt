@@ -1,0 +1,13 @@
+Crossreg top 5:
+0: Medical Sciences                  80
+1: Economics                         74
+2: Government                        65
+3: Romance Languages & Lit           65
+4: African & African Amer Studies    54
+
+Grad top 5:
+1: Medical Sciences                  1090
+2: Economics                         687
+3: Physics                           386
+4: Government                        366
+5: Psychology                        282
