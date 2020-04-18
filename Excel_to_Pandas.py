@@ -7,8 +7,16 @@ Created on Fri Apr 10 23:52:06 2020
 """
 import pandas as pd
 from openpyxl import load_workbook
+import sys
 
-excel_filename = input()
+argc = len(sys.argv)
+argv = sys.argv
+
+if not (argc < 4 and argc > 1):
+    print("Usage: python3 [name_of_file]")
+    sys.exit()
+
+excel_filename = argv[1]
 workbook=load_workbook(filename=excel_filename)
 sheet = workbook.active
 
