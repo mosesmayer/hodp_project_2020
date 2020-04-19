@@ -1,0 +1,13 @@
+Crossreg top 5:
+0: Computer Science                  136
+1: Economics                         88
+2: Romance Languages & Lit           71
+3: East Asian Langs & Civ            49
+4: South Asian Studies               40
+
+Grad top 5:
+1: Medical Sciences                  1545
+2: Economics                         473
+3: Computer Science                  358
+4: Engineering Sciences              300
+5: Psychology                        286

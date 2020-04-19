@@ -1,0 +1,13 @@
+Crossreg top 5:
+0: Computer Science                  119.0
+1: Economics                         79.0
+2: Molecular & Cellular Biology      55.0
+3: East Asian Langs & Civ            55.0
+4: Medical Sciences                  44.0
+
+Grad top 5:
+1: Medical Sciences                  1483.0
+2: Economics                         790.0
+3: Computer Science                  442.0
+4: Physics                           438.0
+5: Government                        392.0
