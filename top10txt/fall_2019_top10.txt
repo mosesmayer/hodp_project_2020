@@ -1,0 +1,36 @@
+Crossreg top 10:
+1: Computer Science                  119.0
+2: Economics                         79.0
+3: Molecular & Cellular Biology      55.0
+4: East Asian Langs & Civ            55.0
+5: Medical Sciences                  44.0
+6: Romance Languages & Lit           43.0
+7: Philosophy                        42.0
+8: Physics                           41.0
+9: Engineering Sciences              41.0
+10: Psychology                        36.0
+
+Grad top 10:
+1: Medical Sciences                  1483.0
+2: Economics                         790.0
+3: Computer Science                  442.0
+4: Physics                           438.0
+5: Government                        392.0
+6: History                           356.0
+7: Engineering Sciences              323.0
+8: Psychology                        298.0
+9: Chemistry & Chemical Biology      259.0
+10: Statistics                        255.0
+
+Ugrad top 10:
+1: General Education                 3870.0
+2: Economics                         1966.0
+3: Computer Science                  1811.0
+4: Mathematics                       1666.0
+5: Psychology                        1333.0
+6: Government                        1100.0
+7: Expository Writing                1009.0
+8: Freshman Seminars                 970.0
+9: Statistics                        965.0
+10: Romance Languages & Lit           877.0
+
