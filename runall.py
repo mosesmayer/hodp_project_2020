@@ -12,7 +12,7 @@ filenames = [
     "Spring\\ 2019/spring_2019.xlsx",
 ]
 
+cmd = "python3 Excel_to_Pandas.py"
 for i in filenames:
-    cmd = "python3 Excel_to_Pandas.py {}".format(i)
-    print(cmd)
-    subprocess.call(cmd, shell=True)
+    cmd += " {}".format(i);
+subprocess.call(cmd, shell=True)
