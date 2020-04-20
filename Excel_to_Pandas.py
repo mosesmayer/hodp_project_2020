@@ -11,6 +11,11 @@ import sys
 from collections import defaultdict
 import matplotlib.pyplot as plt
 import numpy as np
+
+# Command line to run program: python3 Excel_to_Pandas.py "Spring 2016/spring_2016.xlsx" "Spring 2017/spring_2017.xlsx"
+# "Spring 2018/spring_2018.xlsx""Spring 2019/spring_2019.xlsx" "Fall 2016/fall_2016.xlsx" "Fall 2017/fall_2017.xlsx"
+# "Fall 2018/fall_2018.xlsx" "Fall 2019/fall_2019.xlsx"
+
 import subprocess
 
 # filenames = [
@@ -213,8 +218,6 @@ springnumsU = [springdataU[i][1] for i in range(5)]
 falldataCR = sorted(fallCR.items(), key=lambda dept: sum(dept[1])/4, reverse=True)
 falldeptsCR = [falldataCR[i][0] for i in range(5)]
 fallnumsCR = [falldataCR[i][1] for i in range(5)]
-print(falldeptsCR)
-print(fallnumsCR)
 
 falldataG = sorted(fallG.items(), key=lambda dept: sum(dept[1])/4, reverse=True)
 falldeptsG = [falldataG[i][0] for i in range(5)]
@@ -225,7 +228,7 @@ falldeptsU = [falldataU[i][0] for i in range(5)]
 fallnumsU = [falldataU[i][1] for i in range(5)]
 
 
-def plot(dept, num, title):
+def plotbar(dept, num, title):
     barwidth = 0.2
 
     # set heights of bars
@@ -253,9 +256,30 @@ def plot(dept, num, title):
     plt.show()
 
 
-plot(springdeptsCR, springnumsCR, "Spring Cross-Registration")
-plot(springdeptsG, springnumsG, "Spring Graduate Students")
-plot(springdeptsU, springnumsU, "Spring Undergraduate Students")
-plot(falldeptsCR, fallnumsCR, "Fall Cross-Registration")
-plot(falldeptsG, fallnumsG, "Fall Graduate Students")
-plot(falldeptsU, fallnumsU, "Fall Undergraduate Students")
+def plotline(dept, num, title):
+    x = [2016, 2017, 2018, 2019]
+    colors = ["r", "g", "b", "pink", "orange"]
+    for i in range(len(num)):
+        plt.plot(x, num[i], linewidth=2, label=dept[i], color=colors[i])
+
+    plt.xlabel("Year", fontweight="bold")
+    plt.ylabel("# of Students", fontweight="bold")
+    plt.xticks(np.arange(2016, 2020, 1))
+    plt.title(title)
+    plt.legend()
+    plt.show()
+
+
+plotbar(springdeptsCR, springnumsCR, "Spring Cross-Registration")
+plotbar(springdeptsG, springnumsG, "Spring Graduate Students")
+plotbar(springdeptsU, springnumsU, "Spring Undergraduate Students")
+plotbar(falldeptsCR, fallnumsCR, "Fall Cross-Registration")
+plotbar(falldeptsG, fallnumsG, "Fall Graduate Students")
+plotbar(falldeptsU, fallnumsU, "Fall Undergraduate Students")
+
+plotline(springdeptsCR, springnumsCR, "Spring Cross-Registration")
+plotline(springdeptsG, springnumsG, "Spring Graduate Students")
+plotline(springdeptsU, springnumsU, "Spring Undergraduate Students")
+plotline(falldeptsCR, fallnumsCR, "Fall Cross-Registration")
+plotline(falldeptsG, fallnumsG, "Fall Graduate Students")
+plotline(falldeptsU, fallnumsU, "Fall Undergraduate Students")
