@@ -243,6 +243,8 @@ def plotbar(dept, num, title):
     r2 = [x + barwidth for x in r1]
     r3 = [x + barwidth for x in r2]
 
+    plt.figure(figsize=(16*0.8, 9*0.8))
+
     plt.bar(r0, bars2016, color="b", width=barwidth, edgecolor="white", label="2016")
     plt.bar(r1, bars2017, color="r", width=barwidth, edgecolor="white", label="2017")
     plt.bar(r2, bars2018, color="g", width=barwidth, edgecolor="white", label="2018")
@@ -253,12 +255,14 @@ def plotbar(dept, num, title):
     plt.title(title)
 
     plt.legend()
-    plt.show()
+    plt.savefig("graphs/{}-bar.png".format(title))
+    plt.clf()
 
 
 def plotline(dept, num, title):
     x = [2016, 2017, 2018, 2019]
     colors = ["r", "g", "b", "pink", "orange"]
+    plt.figure(figsize=(16*0.8, 9*0.8))
     for i in range(len(num)):
         plt.plot(x, num[i], linewidth=2, label=dept[i], color=colors[i])
 
@@ -267,7 +271,8 @@ def plotline(dept, num, title):
     plt.xticks(np.arange(2016, 2020, 1))
     plt.title(title)
     plt.legend()
-    plt.show()
+    plt.savefig("graphs/{}-line.png".format(title))
+    plt.clf()
 
 
 plotbar(springdeptsCR, springnumsCR, "Spring Cross-Registration")
