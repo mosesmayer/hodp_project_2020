@@ -261,7 +261,7 @@ def plotbar(dept, num, title):
 
 def plotline(dept, num, title):
     x = [2016, 2017, 2018, 2019]
-    colors = ["r", "g", "b", "pink", "orange"]
+    colors = ["#D2232A", "#DA4B50", "#AC1D23", "#86171B", "#601014"]
     plt.figure(figsize=(16*0.8, 9*0.8))
     for i in range(len(num)):
         plt.plot(x, num[i], linewidth=2, label=dept[i], color=colors[i])
@@ -271,7 +271,7 @@ def plotline(dept, num, title):
     plt.xticks(np.arange(2016, 2020, 1))
     plt.title(title)
     plt.legend()
-    plt.savefig("graphs/{}-line.png".format(title))
+    plt.savefig("graphs-color/{}-line.png".format(title))
     plt.clf()
 
 
