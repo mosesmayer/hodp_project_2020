@@ -245,17 +245,17 @@ def plotbar(dept, num, title):
 
     plt.figure(figsize=(16*0.8, 9*0.8))
 
-    plt.bar(r0, bars2016, color="b", width=barwidth, edgecolor="white", label="2016")
-    plt.bar(r1, bars2017, color="r", width=barwidth, edgecolor="white", label="2017")
-    plt.bar(r2, bars2018, color="g", width=barwidth, edgecolor="white", label="2018")
-    plt.bar(r3, bars2019, color="pink", width=barwidth, edgecolor="white", label="2019")
+    plt.bar(r0, bars2016, color="#D2232A", width=barwidth, edgecolor="white", label="2016")
+    plt.bar(r1, bars2017, color="#DA4B50", width=barwidth, edgecolor="white", label="2017")
+    plt.bar(r2, bars2018, color="#AC1D23", width=barwidth, edgecolor="white", label="2018")
+    plt.bar(r3, bars2019, color="#86171B", width=barwidth, edgecolor="white", label="2019")
 
     plt.xlabel("Department", fontweight="bold")
     plt.xticks([r + barwidth for r in np.arange(barwidth/2, len(bars2016))], dept)
     plt.title(title)
 
     plt.legend()
-    plt.savefig("graphs/{}-bar.png".format(title))
+    plt.savefig("graphs-color/{}-bar.png".format(title))
     plt.clf()
 
 
